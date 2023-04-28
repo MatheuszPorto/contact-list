@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #1A1924;
+  color: #E1E1E6;
+}
+
+header {
+  background: #16151E;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  padding: 4rem;
+}
+
+.itens-center {
+  align-items: center;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+nav h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  gap: 1.6rem;
+}
+
+nav ul li {
+  font-size: 2.4rem;
+}
+
+form {
+  margin-top: 2.4rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: .1rem;
+  height: .1rem;
+  padding: 0;
+  margin: -.1rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.input-wrapper {
+  gap: 1rem;
+  background: #24243D;
+  border-radius: .5rem;
+  padding: 1.6rem 2.4rem;
+}
+
+.input-wrapper input {
+  color: #E1E1E6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+.input-wrapper input::placeholder {
+  color: #E1E1E6;
+}
+
+.input-wrapper:focus-within {
+  outline: .1rem #E1E1E6 solid;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 5.2rem;
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+.contacts::-webkit-scrollbar {
+  width: .8rem;
+}
+
+.contacts::-webkit-scrollbar-thumb {
+  background: #282843;
+  border-radius: 99.9rem;
+}
+
+.letter {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .8rem;
+  margin-right: 5.2rem;
+  font-weight: 700;
+  background: var(--color);
+}
+
+.purple {
+  --color: #633BBC;
+}
+
+.green {
+  --color: #07847E;
+}
+
+.pink {
+  --color: #9A00B3;
+}
+
+.blue {
+  --color: #0088B3;
+}
+
+.yellow {
+  --color: rgba(255, 255, 0, 0.689);
+}
+
+.person {
+  gap: 1.6rem;
+}
+
+.person img {
+  width: 4.8rem;
+  height: 4.8rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.person h3 {
+  font-weight: 700;
+}
+
+.person p {
+  color: #8C8CBA;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-top: .4rem;
+}
+
+.list-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+header nav,
+header form,
+.list-wrapper {
+  max-width: 35rem;
+  width: 100%;
+  margin-inline: auto;
+}
